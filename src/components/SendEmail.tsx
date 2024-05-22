@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 import * as React from "react";
-import { EmailTemplate } from "@/emails/Email";
+import { RaycastMagicLinkEmail } from "@/emails/email";
 
 const resend = new Resend(process.env.RESEND_KEY);
 export const sendEmail = async (FormData: FormData) => {
@@ -22,7 +22,7 @@ export const sendEmail = async (FormData: FormData) => {
       reply_to: sender,
       subject: "New message",
       text: message,
-      react: EmailTemplate({ message: message }),
+      react: RaycastMagicLinkEmail({ magicLink: "mohammed" }),
     });
   } catch (error) {
     console.log(error);

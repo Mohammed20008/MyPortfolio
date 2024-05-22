@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className=" scroll-smooth">
       <body className={`${inter.className} bg-gray-100`}>
-        <main className=" mx-auto flex min-h-screen w-full max-w-80 flex-col items-center sm:max-w-4xl md:max-w-2xl">
+        <main className=" min-w-screen-full mx-auto flex min-h-screen w-full flex-col items-center sm:max-w-4xl md:max-w-2xl">
           <div className=" absolute -z-20 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-blue-400 to-red-400 opacity-20 blur-xl" />
           <ActiveSectionProvider>
             <Header />
