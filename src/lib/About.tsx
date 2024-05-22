@@ -10,8 +10,6 @@ const AboutData = () => {
       tenetur perferendis, velit accusantium quibusdam est illum consequatur sed
       praesentium aliquid eum? Lorem ipsum, dolor sit amet consectetur
       adipisicing elit. Dolorem, labore. Expedita labore explicabo quo, corrupti
-      reiciendis necessitatibus. Laudantium earum laboriosam cumque, in unde
-      fugit. Possimus vel saepe dolorum dicta nulla?
     </p>
   );
 };
