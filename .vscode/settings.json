@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "hide-files.files": [
+    "package-lock.json",
+    "postcss.config.mjs",
+    "README.md",
+    "tsconfig.json",
+    ".vscode",
+    ".eslintrc.json",
+    ".gitignore",
+    "components.json",
+    ".next"
+  ],
+  "Codegeex.Chat.LanguagePreference": "English",
+  "Codegeex.Comment.LanguagePreference": "English",
+  "Codegeex.SidebarUI.LanguagePreference": "English",
+  "hidefiles.configurationType": "global",
+  "hidefiles.selectedProfile": "Show All Files"
+}
