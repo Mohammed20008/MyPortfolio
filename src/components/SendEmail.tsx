@@ -2,6 +2,7 @@
 
 import { Resend } from "resend";
 import * as React from "react";
+import { EmailTemplate } from "@/emails/Email";
 
 const resend = new Resend(process.env.RESEND_KEY);
 export const sendEmail = async (FormData: FormData) => {
@@ -19,9 +20,9 @@ export const sendEmail = async (FormData: FormData) => {
       from: "Mohammed<onboarding@resend.dev>",
       to: "mohammedabdalmenem1@gmail.com",
       reply_to: sender,
-      subject: "ddddd",
+      subject: "New message",
       text: message,
-      // react: <Welcome />,
+      react: EmailTemplate({ message: message }),
     });
   } catch (error) {
     console.log(error);
