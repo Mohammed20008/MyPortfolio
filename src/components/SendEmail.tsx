@@ -3,7 +3,7 @@
 import { Resend } from "resend";
 import * as React from "react";
 
-const resend = new Resend(process.env.RESEND_EMAIL);
+const resend = new Resend(process.env.RESEND_KEY);
 export const sendEmail = async (FormData: FormData) => {
   const message = FormData.get("message");
   const sender = FormData.get("email");
