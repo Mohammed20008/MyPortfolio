@@ -1,8 +1,7 @@
 "use server";
 
-import { Resend } from "resend";
-import * as React from "react";
 import { EmailTemplate } from "@/emails/email";
+import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_KEY);
 export const sendEmail = async (FormData: FormData) => {
