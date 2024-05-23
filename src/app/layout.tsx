@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Mohammed | Personal portfolio",
   description: "Software Developer and Logo Designer",
+  keywords: "Software Developer, Logo Designer, Mohammed, Portfolio",
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
