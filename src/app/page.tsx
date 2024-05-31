@@ -24,6 +24,7 @@ export default function Home() {
       <SectionDevider />
       <Skills />
       {/* <StickyScrollRevealDemo /> */}
+      <SectionDevider />
       <Contact />
     </motion.div>
   );

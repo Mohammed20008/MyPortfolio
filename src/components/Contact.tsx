@@ -15,7 +15,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="relative flex w-full flex-col space-y-4"
+      className="relative flex w-full flex-col"
       initial={{
         opacity: 0,
         y: -100,
@@ -30,7 +30,7 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <h1 className="text-center text-gray-700">contact me on </h1>
+      <h1 className="text-center text-gray-700">contact me on gmail </h1>
       <form
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData);
