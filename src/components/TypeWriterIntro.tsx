@@ -23,10 +23,10 @@ export function TypewriterEffectDemo() {
   ];
   return (
     <div className="flex flex-col items-center justify-center ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-base  mb-10">
+      <p className="mb-10 text-base text-neutral-600  dark:text-neutral-200">
         Let's Build Together! ✨
       </p>
-      <TypewriterEffect words={words} />
+      <TypewriterEffect words={words} className="-mt-8" />
     </div>
   );
 }

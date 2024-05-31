@@ -15,7 +15,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="relative flex w-[min(100%,38rem)] flex-col space-y-4"
+      className="relative flex w-full flex-col space-y-4"
       initial={{
         opacity: 0,
         y: -100,
@@ -30,15 +30,7 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <h1 className="text-center text-gray-700">
-        contact me on{" "}
-        <a
-          href="mailto:mohammedabdalmenem1@gmail.com"
-          className=" hover:underline"
-        >
-          mohammedabdalmenem1@gmail.com
-        </a>
-      </h1>
+      <h1 className="text-center text-gray-700">contact me on </h1>
       <form
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData);
@@ -48,7 +40,7 @@ const Contact = () => {
           }
           toast.success("success");
         }}
-        className="flex flex-col space-y-4"
+        className="flex w-full flex-col space-y-4"
       >
         <input type="email" className="h-10 rounded" required name="email" />
         <textarea name="message" id="" className="h-40 rounded" required />

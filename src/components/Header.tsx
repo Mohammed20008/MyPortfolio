@@ -16,8 +16,8 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       //   transition={{ delay: 0.5, duration: 0.5 }}
     >
-      <nav className="flex items-center justify-center space-x-8">
-        <ul className="flex flex-wrap space-x-8 text-gray-600">
+      <nav className="flex items-center space-x-8">
+        <ul className="flex flex-wrap justify-center text-gray-600 md:space-x-6">
           {links.map((link, index) => (
             <Link
               onClick={() => {

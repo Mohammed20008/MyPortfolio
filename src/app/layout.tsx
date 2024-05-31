@@ -23,17 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="  scroll-smooth">
+    <html lang="en" className=" w-screen scroll-smooth">
       <body className={`${inter.className} bg-gray-100`}>
-        <main className=" mx-auto flex min-h-screen flex-col items-center justify-center sm:max-w-4xl md:max-w-2xl">
-          <div className=" absolute -z-20 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-blue-400 to-red-400 opacity-20 blur-xl" />
-          <ActiveSectionProvider>
+        <ActiveSectionProvider>
+          <main className="mx-auto flex min-h-screen w-screen flex-col items-center justify-center md:max-w-2xl">
             <Header />
-
+            <div className="absolute -z-20 h-[500px] rounded-full bg-gradient-to-r from-blue-400 to-red-400 opacity-20 blur-xl" />
             {children}
             <Toaster position="top-right" />
-          </ActiveSectionProvider>
-        </main>
+          </main>
+        </ActiveSectionProvider>
       </body>
     </html>
   );

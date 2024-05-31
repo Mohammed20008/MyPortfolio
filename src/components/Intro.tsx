@@ -18,7 +18,7 @@ const Intro = () => {
       id="home"
       className="mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4 md:flex-row"
     >
-      <div className="relative h-40 w-40">
+      <div className="relative h-20 w-20 md:h-40 md:w-40">
         <div>
           <Image
             alt="logo"
@@ -29,7 +29,7 @@ const Intro = () => {
         </div>
 
         <motion.span
-          className="absolute bottom-0 right-0 text-4xl"
+          className="absolute bottom-0 right-0 text-xl md:text-4xl"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, type: "spring" }}

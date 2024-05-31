@@ -1,5 +1,6 @@
 "use server";
 
+import { EmailTemplate } from "@/emails/email";
 // import { EmailTemplate } from "@/emails/email";
 import { Resend } from "resend";
 
@@ -21,7 +22,7 @@ export const sendEmail = async (FormData: FormData) => {
       reply_to: sender,
       subject: "New message",
       text: message,
-      // react: EmailTemplate({ message: message }),
+      react: EmailTemplate({ message: message }),
     });
   } catch (error) {
     console.log(error);
