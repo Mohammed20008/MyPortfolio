@@ -1,6 +1,5 @@
 "use server";
 
-import { EmailTemplate } from "@/emails/email";
 // import { EmailTemplate } from "@/emails/email";
 import { Resend } from "resend";
 
