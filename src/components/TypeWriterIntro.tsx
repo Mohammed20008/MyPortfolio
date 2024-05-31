@@ -5,7 +5,7 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 export function TypewriterEffectDemo() {
   const words = [
     {
-      text: "Hi",
+      text: "Towards",
     },
     {
       text: "awesome",
@@ -17,7 +17,7 @@ export function TypewriterEffectDemo() {
       text: "with",
     },
     {
-      text: "Aceternity.",
+      text: "React.js",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
