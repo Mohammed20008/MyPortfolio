@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Toaster } from "react-hot-toast";
 import ActiveSectionProvider from "@/components/ActiveSectionProvider";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
             <Header />
             <div className="absolute -z-20 h-[500px] rounded-full bg-gradient-to-r from-blue-400 to-red-400 opacity-20 blur-xl" />
             {children}
+            <Footer />
             <Toaster position="top-right" />
           </main>
         </ActiveSectionProvider>

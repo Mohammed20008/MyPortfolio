@@ -16,7 +16,7 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4 md:flex-row"
+      className="mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4"
     >
       <div className="relative h-20 w-20 md:h-40 md:w-40">
         <div>
@@ -38,7 +38,7 @@ const Intro = () => {
         </motion.span>
       </div>
       <div className="w-2/3 space-y-4 text-center">
-        <h1 className="text-3xl">
+        <h1 className="bg-gradient-to-r from-yellow-200 to-slate-900 bg-clip-text text-2xl text-transparent">
           <TypewriterEffectDemo />
         </h1>
         {/* Buttons */}

@@ -6,9 +6,11 @@ const About = () => {
   const { ref } = useSectionName("About", 1);
   return (
     <section className="scroll-mt-28" id="about" ref={ref}>
-      <div className="text-center">
+      <div>
         <SectionHeading>about me</SectionHeading>
-        <AboutData />
+        <div className=" ">
+          <AboutData />
+        </div>
       </div>
     </section>
   );
