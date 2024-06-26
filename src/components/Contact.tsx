@@ -9,7 +9,7 @@ import SubmitBtn from "./ui/SubmitBtn";
 import toast from "react-hot-toast";
 
 const Contact = () => {
-  const { ref } = useSectionName("Contact");
+  const { ref, inView = 0.8 } = useSectionName("Contact");
 
   return (
     <motion.section
@@ -44,7 +44,7 @@ const Contact = () => {
       >
         <input
           type="email"
-          className="h-10 rounded bg-gray-400 p-4 focus:outline-none"
+          className="h-10 rounded bg-gray-900 bg-opacity-60 p-4 focus:outline-none"
           required
           name="email"
         />

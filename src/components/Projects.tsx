@@ -5,7 +5,7 @@ import Project from "./Project";
 import { useSectionName } from "@/lib/hooks";
 
 const Projects = () => {
-  const { ref } = useSectionName("Projects");
+  const { ref } = useSectionName("Projects", 0.25);
   return (
     <section id="projects" className=" scroll-mt-24 transition" ref={ref}>
       <SectionHeading>My Projects</SectionHeading>

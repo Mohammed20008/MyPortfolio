@@ -5,11 +5,11 @@ import { useSectionName } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 const Skills = () => {
+  const { ref } = useSectionName("Skills", 1);
   <SectionHeading>My Skills</SectionHeading>;
 
-  const { ref } = useSectionName("Skills");
   return (
-    <div ref={ref} id="skills" className="flex scroll-mt-28">
+    <section ref={ref} id="skills" className="flex scroll-mt-28">
       <ul className="flex max-w-2xl flex-wrap items-center justify-center gap-1">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -30,7 +30,7 @@ const Skills = () => {
           </motion.li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 export default Skills;
