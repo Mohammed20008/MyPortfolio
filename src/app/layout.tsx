@@ -37,7 +37,7 @@ export default function RootLayout({
           <ActiveSectionProvider>
             <main className="relative mx-auto flex min-h-screen w-screen flex-col items-center justify-center md:max-w-2xl">
               <Header />
-              <div className="fixed left-1/2 top-4 -z-20 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-pink-400 to-indigo-400 opacity-10 blur-3xl" />
+              <div className="fixed left-1/2 top-4 -z-20 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-pink-400 to-indigo-400 opacity-50 blur-3xl dark:opacity-10" />
               {children}
 
               <Footer />
