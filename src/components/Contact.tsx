@@ -42,8 +42,18 @@ const Contact = () => {
         }}
         className="flex w-full flex-col space-y-4"
       >
-        <input type="email" className="h-10 rounded" required name="email" />
-        <textarea name="message" id="" className="h-40 rounded" required />
+        <input
+          type="email"
+          className="h-10 rounded p-4 focus:outline-none"
+          required
+          name="email"
+        />
+        <textarea
+          name="message"
+          id=""
+          className="h-40 rounded p-4 focus:outline-none dark:bg-gray-950"
+          required
+        />
         <SubmitBtn />
       </form>
     </motion.section>

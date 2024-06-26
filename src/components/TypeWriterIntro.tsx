@@ -6,7 +6,7 @@ export function TypewriterEffectDemo() {
   const words = [
     {
       text: "Towards",
-      className: "text-indigo-900",
+      className: "text-indigo-900 dark:text-indigo-300",
     },
     {
       text: "awesome",

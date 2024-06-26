@@ -43,7 +43,7 @@ const Intro = () => {
         </h1>
         {/* Buttons */}
         <div className="flex-col items-center justify-center space-x-4 space-y-4 font-semibold md:flex-row">
-          <Button className="group rounded-full transition ease-in-out hover:scale-110">
+          <Button className="group rounded-full bg-gray-900 bg-gradient-to-r pb-1 backdrop-blur-xl transition ease-in-out hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-black">
             <Link
               href="#contact"
               onClick={() => {
@@ -54,12 +54,12 @@ const Intro = () => {
               Contact me here
             </Link>
 
-            <span className="ml-1 text-xl text-gray-300 transition group-hover:ml-2">
+            <span className="ml-1 text-xl text-gray-300 transition group-hover:ml-2 dark:text-black">
               <BsArrowRight />
             </span>
           </Button>
           <Button
-            className="rounded-full bg-white transition hover:scale-110"
+            className="rounded-full bg-white bg-gradient-to-r pb-1 transition hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-gray-950"
             variant="secondary"
           >
             Download Cv
@@ -68,13 +68,13 @@ const Intro = () => {
             {" "}
             <Link
               href="/"
-              className=" rounded-full bg-white p-3 transition hover:scale-110 hover:text-gray-950"
+              className=" rounded-full bg-white p-3 transition hover:scale-110 hover:text-gray-950 dark:bg-gray-950 dark:text-gray-400 dark:hover:bg-gray-800"
             >
               <BsLinkedin />
             </Link>
             <Link
               href="/"
-              className="rounded-full bg-white p-3 transition hover:scale-110 hover:text-gray-950"
+              className="hover:text-gray-950hover:text-gray-950 rounded-full bg-white p-3 transition hover:scale-110 dark:bg-gray-950 dark:text-gray-400 dark:hover:bg-gray-800"
             >
               <BsGithub />
             </Link>

@@ -17,7 +17,7 @@ const Header = () => {
       //   transition={{ delay: 0.5, duration: 0.5 }}
     >
       <nav className="flex items-center space-x-8">
-        <ul className="flex flex-wrap justify-center text-gray-600 md:space-x-6">
+        <ul className="dar:text-gray-300 flex flex-wrap justify-center md:space-x-6">
           {links.map((link, index) => (
             <Link
               onClick={() => {
@@ -27,15 +27,15 @@ const Header = () => {
               href={link.hash}
               key={link.hash}
               className={cn(
-                "relative flex items-center px-2 py-1 transition hover:text-gray-950",
+                "relative flex items-center px-2 py-1 font-medium transition hover:text-gray-50",
                 {
-                  "font-medium text-gray-950": ActiveSection === link.name,
+                  "font-medium dark:text-gray-300": ActiveSection === link.name,
                 },
               )}
             >
               {link.name === ActiveSection && (
                 <motion.span
-                  className="absolute inset-0 -z-10 rounded-full bg-indigo-100"
+                  className="absolute inset-0 -z-10 rounded-full bg-indigo-100 dark:bg-gray-800"
                   layoutId="ActiveSection"
                 ></motion.span>
               )}

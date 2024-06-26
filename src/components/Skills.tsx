@@ -14,7 +14,7 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="mb-1 ml-1 flex cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-gray-100 p-2 text-gray-700 hover:scale-110 hover:bg-gray-200"
+            className="mb-1 ml-1 flex cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-gray-100 p-2 text-gray-700 hover:scale-110 hover:bg-gray-200 dark:border-none dark:bg-gray-900 dark:text-gray-400 dark:hover:bg-gray-800"
             custom={index}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{

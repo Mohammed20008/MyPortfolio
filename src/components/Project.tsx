@@ -12,7 +12,7 @@ const Project = ({ project }: { project: Projectype }) => {
   });
   return (
     <motion.div
-      className="group relative flex h-60 overflow-hidden rounded-md bg-gray-200 p-4 transition hover:bg-gray-300"
+      className="dark:to-purple-500bg-gray-200 group relative flex h-60 overflow-hidden rounded-md bg-gradient-to-r from-indigo-300 to-purple-300 p-4 pb-1 transition hover:bg-gray-300 dark:bg-indigo-950 dark:from-indigo-500"
       ref={ref}
       style={{
         scale: scrollYProgress,
@@ -21,8 +21,10 @@ const Project = ({ project }: { project: Projectype }) => {
       transition={{ delay: 1 }}
     >
       <div className="h-full max-w-[300px]">
-        <h2 className="font-semibold">{project.title}</h2>
-        <p className="text-gray-700">{project.description}</p>
+        <h2 className="font-semibold dark:text-gray-950">{project.title}</h2>
+        <p className="text-gray-700 dark:text-slate-300">
+          {project.description}
+        </p>
         <ul className="justifce flex flex-wrap items-center gap-1 space-x-1 pt-2">
           {project.tags.map((tag, index) => (
             <li className="project" key={index}>

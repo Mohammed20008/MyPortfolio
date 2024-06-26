@@ -4,7 +4,19 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".vscode": true,
+    ".next": true,
+    "next-env.d.ts": true,
+    ".eslintrc.json": true,
+    "README.md": true,
+    "postcss.config.mjs": true,
+    "package-lock.json": true,
+    "components.json": true,
+    ".gitignore": true,
+    "tsconfig.json": true,
+    "next.config.mjs": false
   },
   "hide-files.files": [
     "package-lock.json",

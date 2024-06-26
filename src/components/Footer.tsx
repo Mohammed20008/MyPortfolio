@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <motion.div
-      className="mt-4 flex h-10 w-full items-center justify-between rounded-t-md bg-gray-200 px-4 text-sm text-muted-foreground"
+      className="mt-4 flex h-10 w-full items-center justify-between rounded-t-md bg-gray-200 px-4 text-sm text-muted-foreground dark:bg-gray-950 dark:text-gray-400"
       initial={{
         opacity: 0,
         y: 20,
