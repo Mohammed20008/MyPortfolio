@@ -12,7 +12,7 @@ const Project = ({ project }: { project: Projectype }) => {
   });
   return (
     <motion.div
-      className="dark:to-purple-500bg-gray-200 group relative flex h-60 overflow-hidden rounded-md bg-gradient-to-r from-indigo-300 to-purple-300 p-4 pb-1 transition hover:bg-gray-300 dark:bg-indigo-950 dark:from-indigo-500"
+      className="projectStyle group"
       ref={ref}
       style={{
         scale: scrollYProgress,

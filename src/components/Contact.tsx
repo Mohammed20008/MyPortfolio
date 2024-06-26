@@ -44,14 +44,14 @@ const Contact = () => {
       >
         <input
           type="email"
-          className="h-10 rounded p-4 focus:outline-none"
+          className="h-10 rounded bg-gray-400 p-4 focus:outline-none"
           required
           name="email"
         />
         <textarea
           name="message"
           id=""
-          className="h-40 rounded p-4 focus:outline-none dark:bg-gray-950"
+          className="h-40 rounded bg-gray-400 p-4 focus:outline-none dark:bg-gray-950"
           required
         />
         <SubmitBtn />

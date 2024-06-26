@@ -6,22 +6,23 @@ export function TypewriterEffectDemo() {
   const words = [
     {
       text: "Towards",
-      className: "text-indigo-900 dark:text-indigo-300",
+      className: "",
     },
     {
       text: "awesome",
-      className: "text-green-600",
+      className: "",
     },
     {
       text: "apps",
     },
     {
       text: "with",
-      className: " text-blue-600",
+      className: "",
     },
     {
       text: "React.js",
-      className: "text-blue-900 dark:text-blue-900 underline",
+      className:
+        "text-blue-700 dark:text-blue-400 underline text-3xl md:text-4xl",
     },
   ];
   return (

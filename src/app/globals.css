@@ -5,8 +5,32 @@
 .header {
   @apply fixed top-0 z-30 flex w-fit items-center justify-center border border-white border-opacity-40 bg-white bg-opacity-80 p-2 shadow-md backdrop-blur-[0.5rem] dark:border-none dark:bg-gray-600 dark:bg-opacity-70 dark:backdrop-blur-2xl sm:top-4 sm:mt-6 sm:h-[3rem] sm:rounded-full sm:py-2;
 }
+.introSection {
+  @apply mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4;
+}
+.contactButton {
+  @apply rounded-full bg-gray-900 bg-gradient-to-r backdrop-blur-xl transition ease-in-out hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-black;
+}
+.cvButton {
+  @apply rounded-full bg-gray-900 bg-gradient-to-r backdrop-blur-xl transition ease-in-out hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-black;
+}
+.link {
+  @apply rounded-full bg-white p-3 transition hover:scale-110 hover:text-gray-950 dark:bg-gray-950 dark:text-gray-400 dark:hover:bg-gray-800;
+}
+.aboutData {
+  @apply bg-gradient-to-r from-gray-100 via-slate-600 to-slate-950 bg-clip-text text-center font-medium leading-4 tracking-tight text-transparent dark:from-gray-50 dark:to-slate-800 sm:text-3xl;
+}
+.projectStyle {
+  @apply relative flex h-60 overflow-hidden rounded-md bg-gray-200 bg-gradient-to-r from-indigo-300 to-purple-300 p-4 pb-1 transition hover:bg-gray-300 dark:bg-indigo-950 dark:from-indigo-700 dark:to-purple-500;
+}
 .project {
   @apply flex items-center rounded-full bg-gray-800 px-2 text-sm text-gray-300;
+}
+.skills {
+  @apply mb-1 ml-1 flex cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-gray-100 p-2 text-gray-700 hover:scale-110 hover:bg-gray-200 dark:border-none dark:bg-gray-900 dark:text-gray-400 dark:hover:bg-gray-800;
+}
+.footer {
+  @apply mt-4 flex h-10 w-full items-center justify-between rounded-t-md bg-gray-950 px-4 text-sm text-muted-foreground dark:text-gray-400;
 }
 @layer base {
   :root {
