@@ -25,7 +25,7 @@ const Intro = () => {
         </div>
 
         <motion.span
-          className="absolute bottom-0 right-0 text-xl md:text-4xl"
+          className="absolute bottom-0 right-0 text-6xl md:text-4xl"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, type: "spring" }}
@@ -34,7 +34,7 @@ const Intro = () => {
         </motion.span>
       </div>
       <div className="space-y-4 text-center">
-        <h1 className="bg-gradient-to-r from-yellow-200 to-slate-900 bg-clip-text text-2xl text-transparent">
+        <h1>
           <TypewriterEffectDemo />
         </h1>
         {/* Buttons */}
