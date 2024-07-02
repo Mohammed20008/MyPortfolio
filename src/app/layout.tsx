@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import ActiveSectionProvider from "@/components/ActiveSectionProvider";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -42,6 +42,7 @@ export default function RootLayout({
 
               <Footer />
               <Toaster position="top-right" />
+              <SpeedInsights />
             </main>
           </ActiveSectionProvider>
         </ThemeProvider>

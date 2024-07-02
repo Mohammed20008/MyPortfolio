@@ -26,7 +26,7 @@ export default function Home() {
       {/* <StickyScrollRevealDemo /> */}
       <SectionDevider />
       <Contact />
-      <div className="fixed bottom-4 right-16">
+      <div className="fixed bottom-4 right-0 md:right-16">
         <ModeToggle />
       </div>
     </motion.div>
